@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Text Editor Example</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      #editor-toolbar {
+        padding: 10px;
+        background-color: #f0f0f0;
+        border-bottom: 1px solid #ccc;
+      }
+
+      #editor {
+        width: 100%;
+        height: 300px;
+      }
+      /* .text-bold {
+        font-weight: bold;
+        color: red;
+      } */
+    </style>
+    <!-- <script>
+    function formatText(command) {
+      document.execCommand(command, false, null);
+    }
+  </script> -->
+    <script
+      src="https://kit.fontawesome.com/6f815983a3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="editor-toolbar" class="grid">
+      <div>
+        <button id="bold-button">B</button>
+        <button id="italic-button" style="font-style: italic">I</button>
+        <button id="underline-button" style="text-decoration: underline">
+          U
+        </button>
+      </div>
+
+      <div>
+        <button id="color"><input type="color" /></button>
+        <button id="text-left"><i class="fa-solid fa-align-left"></i></button>
+        <button id="text-center">
+          <i class="fa-solid fa-align-center"></i>
+        </button>
+        <button id="text-right">
+          <i class="fa-solid fa-align-right"></i>
+        </button>
+        <button id="text-justify">
+          <i class="fa-solid fa-align-justify"></i>
+        </button>
+      </div>
+
+      <div>
+          <button class="button_border_none" id="capital">aA</button>
+          <select name="" id="font">
+              <option value="18px">18</option>
+              <option value="24px">24</option>
+              <option value="30px">30</option>
+              <option value="36px">36</option>
+              <option value="42px">42</option>
+              <option value="72px">72</option>
+              <option value="84px">84</option>
+              <option value="96px">96</option>
+          </select>
+      </div>
+    </div>
+    <div id="editor" contenteditable="true">
+      <!-- This is the editable content area -->
+    </div>
+
+    <p></p>
+
+    <script src="./js/function.js"></script>
+  </body>
+</html>
